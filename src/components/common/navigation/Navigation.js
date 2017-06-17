@@ -13,16 +13,16 @@ const handleSelect = selected => (
 
 const Navigation = () => (
   <Router>
-    <div>
-      <Col lg={2}>
-        <Nav className="mainNav fade-in third" onSelect={handleSelect}>
+    <div className="fade-in third">
+      <Col lg={12}>
+        <Nav className="mainNav" bsStyle="pills" onSelect={handleSelect}>
           <LinkContainer to="/about"><NavItem eventKey={'about'}>About</NavItem></LinkContainer>
           <LinkContainer to="/work"><NavItem eventKey={'work'}>Work</NavItem></LinkContainer>
           <LinkContainer to="/contact"><NavItem eventKey={'contact'}>Contact</NavItem></LinkContainer>
         </Nav>
       </Col>
       <Col lg={8}>
-        <div className="fade-in third">
+        <div>
           <Route path="/about" component={About} />
           <Route path="/work" component={Work} />
           <Route path="/contact" component={Contact} />

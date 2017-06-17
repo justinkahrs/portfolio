@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import './about.css';
+import profilePic from './me.jpg';
 
 const styles = {
   container: {
@@ -9,12 +10,15 @@ const styles = {
   },
   profile: {
     marginBottom: '2em',
+    height: '256px',
+    width: '256px',
+    borderRadius: '50%',
   },
 };
 const About = () => (
   <Col lg={12}>
     <Col style={styles.container}>
-      <div style={styles.profile} className="profilePic" />
+      <img alt="me in front of a blue background" style={styles.profile} src={profilePic} />
     </Col>
     <p>Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
       velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante.

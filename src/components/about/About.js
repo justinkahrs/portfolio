@@ -3,13 +3,17 @@ import { Col } from 'react-bootstrap';
 import './about.css';
 
 const styles = {
+  container: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
   profile: {
     marginBottom: '2em',
   },
 };
 const About = () => (
   <Col lg={12}>
-    <Col smOffset={3} lgOffset={3}>
+    <Col style={styles.container}>
       <div style={styles.profile} className="profilePic" />
     </Col>
     <p>Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum

@@ -1,8 +1,14 @@
 import React from 'react';
-import {Col} from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+
+const styles = {
+  center: {
+    textAlign: 'center',
+  },
+};
 
 const Contact = () => (
-  <Col lg={12}>
+  <Col style={styles.center} lg={12}>
     <h3>Email</h3>
     <p>justin@justinkahrs.com</p>
     <h3>Telephone</h3>

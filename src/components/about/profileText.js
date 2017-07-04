@@ -3,8 +3,8 @@ import React from 'react';
 const styles = {
   body: {
     width: '75%',
-  }
-}
+  },
+};
 
 export default (
   <div style={styles.body}>

@@ -1,10 +1,16 @@
 .fade-in.third {
-    -webkit-animation-delay: 2.2s;
-    -moz-animation-delay: 2.2s;
-    animation-delay: 2.2s;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
 }
-.fade-in.last {
-    -webkit-animation-delay: 3.2s;
-    -moz-animation-delay: 3.2s;
-    animation-delay: 3.2s;
+.navBar {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.navBar a {
+  font-family: monospace;
+  font-weight: bold;
+  color: black !important;
+  transition: .5s all;
 }

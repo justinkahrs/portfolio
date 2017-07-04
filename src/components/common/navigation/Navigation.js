@@ -1,21 +1,9 @@
 import React from 'react';
-import Work from '../../work/Work';
-import Contact from '../../contact/Contact';
-import About from '../../about/About';
 import { Col, Collapse, Nav, NavItem } from 'react-bootstrap';
+import Pages from './Pages';
 import './navigation.css';
 
-const styles = {
-  nav: {
-    paddingBottom: '2em',
-  },
-};
 
-const Pages = {
-  about: <About key="about" />,
-  contact: <Contact key="contact" />,
-  work: <Work key="work" />,
-};
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -47,10 +35,9 @@ class Navigation extends React.Component {
       <div className="fade-in third">
         <Col lg={12}>
           <Nav
-            style={styles.nav}
             justified
-            bsStyle="tabs"
             onSelect={this.handleSelect}
+            className="navBar"
           >
             <NavItem eventKey={'about'}>About</NavItem>
             <NavItem eventKey={'work'}>Work</NavItem>

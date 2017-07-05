@@ -3,11 +3,6 @@ import { Col } from 'react-bootstrap';
 import Entry from './entry/Entry';
 import PromotionEntry from './entry/PromotionEntry';
 
-const styles = {
-  title: {
-    textAlign: 'center',
-  },
-};
 const Work = () => (
   <Col lg={12}>
     <PromotionEntry
@@ -41,7 +36,7 @@ const Work = () => (
         each endpoint with JWT and OAuth2.
       </p>
       <p>
-        For the frontend application, we used webpack for build automation tasks and React as 
+        For the frontend application, we used webpack for build automation tasks and React as
         the interface. I set up automated functional testing for the project using a script to start up an
         xvfb instance (headless browser testing) with Nightwatch.js on our Bamboo CI servers.
       </p>
@@ -79,7 +74,6 @@ const Work = () => (
         sensitive data loss.
       </p>
     </Entry>
-
   </Col>
 );
 export default Work;

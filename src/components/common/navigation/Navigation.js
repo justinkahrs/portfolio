@@ -8,8 +8,8 @@ class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false,
-      selected: <div />,
+      open: true,
+      selected: Pages['about'],
     };
     this.handleSelect = this.handleSelect.bind(this);
   }

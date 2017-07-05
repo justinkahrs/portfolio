@@ -3,7 +3,10 @@ import { Col } from 'react-bootstrap';
 
 const styles = {
   center: {
-    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'space-around',
   },
 };
 

@@ -16,10 +16,6 @@ const styles = {
     width: '256px',
     borderRadius: '50%',
   },
-  profileBody: {
-    width: '60%',
-    justifyContent: 'center',
-  },
 };
 const About = () => (
   <Col lg={12}>
@@ -27,7 +23,7 @@ const About = () => (
       <img alt="me in front of a blue background" style={styles.profilePic} src={profilePic} />
     </Col>
     <Col lg={12}>
-      <div style={styles.container}>
+      <div>
         {profileText}
       </div>
     </Col>

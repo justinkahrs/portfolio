@@ -29,21 +29,17 @@ const Work = () => (
       }
     >
       <p>
-        I was brought on the team to help replace a legacy business intelligence
-        reporting portal with one that used modern technologies, was more flexible to changes
-        in business logic and had a more visually appealing style. Working within
-        the boundaries of our existing infrastructure, we built the backend using Spring Boot securing
-        each endpoint with JWT and OAuth2.
+        Work with agile team to replace a legacy business intelligence
+        reporting portal with one that uses modern technologies, is more flexible to changes
+        in business logic, and has a more visually appealing style. Build the backend using Spring Boot securing
+        each endpoint with JWT and OAuth2Work within the boundaries of our existing infrastructure.
       </p>
       <p>
-        For the frontend application, we used webpack for build automation tasks and React as
-        the interface. I set up automated functional testing for the project using a script to start up an
-        xvfb instance (headless browser testing) with Nightwatch.js on our Bamboo CI servers.
+        Implement webpack for build automation tasks and React as
+        the interface for the frontend application. Set up automated functional testing for the project using a script to start up an xvfb instance (headless browser testing) with Nightwatch.js on Bamboo CI servers.
       </p>
       <p>
-        I worked closely with the UX/Design team to make sure we had all of the primary requirements
-        nailed down, especially in terms of usability for customers, as there was a lot to be desired in the application
-        we were replacing.
+        Work closely with the UX/Design team to fulfill the primary requirements, especially in terms of usability for customers.
       </p>
     </PromotionEntry>
     <Entry
@@ -53,23 +49,26 @@ const Work = () => (
       endDate="June 2015"
     >
       <p>
-        I handled the installation and provisioning of all new servers. I’d connect
-        any necessary disk shelves, install RAID/Fiber Channel HBAs, and upgrade CPU/RAM if necessary.
+        Handled installation and provisioning of all new servers. Connected
+        any necessary disk shelves. Installed RAID/Fiber Channel HBAs, and upgraded CPU/RAM when necessary.
       </p>
       <p>
-        I was responsible for the HP System Insight Manager server, which meant I was entrusted to the well-being
-        of every server in the Data Center. I added all of the HP servers to this system (300+) and expanded the
+        Responsible for the HP System Insight Manager server and entrusted to the well-being
+        of every server in the Data Center. Added all of the HP servers to this system (300+) and expanded the
          system as the network grew.
       </p>
       <p>
-        I was in charge of testing the security of the networks. I used BeyondTrust’s Retina Network Security Scanner,
-        NMAP and other tools. I compiled detailed vulnerability reports and assessed threats starting with the most
+        In charge of testing the security of the networks. Used BeyondTrust’s Retina Network Security Scanner,
+        NMAP and other tools. Compiled detailed vulnerability reports and assessed threats starting with the most
         pertinent (at the time, Heartbleed/Shellshock exploits) while working directly with the system administrator
         to find the best course of remediation.
       </p>
       <p>
-        I had to ensure that the servers in the private secured environment were all compliant with DSS 3.0
-        in order to process credit card information. I also did some PII (Personally Identifying Information)
+		<ul>
+			<li></li>
+		</ul>
+        Maintained servers in the private secured environment and ensured they were all compliant with DSS 3.0
+        in order to process credit card information. Acquired some practice with PII (Personally Identifying Information)
         scanning, which looked for personal information such as SSNs on the network shares to reduce risk of
         sensitive data loss.
       </p>

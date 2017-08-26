@@ -4,10 +4,14 @@ const styles = {
   body: {
     width: '90%',
   },
+  title: {
+    fontSize: '25px',
+  },
 };
 
 export default (
   <div style={styles.body}>
+    <div style={styles.title}>About Me</div>
     <p>I am a full-stack developer with a current focus in JavaScript (React)
     and Java (Spring - Boot/Security/Data). I am experienced in setting up a
     new project from the ground up, and making sure components remain as modular

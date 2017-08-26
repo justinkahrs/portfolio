@@ -1,15 +1,10 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
 import './header.css';
 
 const Header = props => (
-  <Col lg={12}>
-    <Row>
-      <Col lg={4}>
-        <h1 id="mainHeader" className="fade-in one">{props.main}</h1>
-        <h2 id="subHeader" className="fade-in two">{props.sub}</h2>
-      </Col>
-    </Row>
-  </Col>
+  <div className="header">
+    <div className="header__main fade-in one">{props.main}</div>
+    <div className="header__sub fade-in two">{props.sub}</div>
+  </div>
 );
 export default Header;

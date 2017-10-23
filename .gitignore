@@ -1,6 +1,7 @@
 .vscode
 .idea/
 *.iml
+*.swp
 
 build/
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Col } from 'react-bootstrap';
 import Entry from './entry/Entry';
 import PromotionEntry from './entry/PromotionEntry';
 import './work.css';

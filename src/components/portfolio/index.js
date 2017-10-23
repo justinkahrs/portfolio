@@ -20,10 +20,11 @@ const Portfolio = () => (
       Pick a Part PC
     </a>
     <br />
-    <p>
-      This is a proof of concept website I made to simply the PC building process. The site uses React 16 and React
-      Router v4. I really tried to focus on a modern interface with easy an easy to follow form. See the code for Pick a
-      Part PC and the site you're currently reading on my <a href="https://github.com/justinkahrs">github page</a>.
+    <p style={{ textAlign: 'justify' }}>
+      This is a proof of concept website I made to simply the PC building process. The site uses React 16, React Router
+      v4, and Redux as the way to keep track of the shopping cart. I really tried to focus on a modern interface with
+      easy an easy to follow form. See the code for Pick a Part PC and the site you're currently reading on my{' '}
+      <a href="https://github.com/justinkahrs">github page</a>.
     </p>
   </Col>
 );

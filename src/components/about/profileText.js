@@ -11,7 +11,7 @@ export default (
     <h2>About Me</h2>
     <p>
       I am a full-stack developer with a current focus in JavaScript (React) and Java (Spring). I especially enjoy using
-      the latest tools that come along with modern JavaScript, including Webpack, Babel,and Jest.
+      the latest tools that come along with modern React development, including Redux, Webpack, Babel,and Jest.
     </p>
     <p>
       I love to learn new things, it's why I got into this business. I'm obsessed with reading up on the latest

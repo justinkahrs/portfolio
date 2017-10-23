@@ -2,18 +2,17 @@ import React from 'react';
 import { Col } from 'react-bootstrap';
 import Entry from './entry/Entry';
 import PromotionEntry from './entry/PromotionEntry';
+import './work.css';
 
 const Work = () => (
-  <Col lg={12}>
+  <div className="workEntries">
     <PromotionEntry
       mainTitle="Senior Software Engineer"
       location="Indiana University - Bloomington, IN"
-      entries={
-      [
+      entries={[
         {
-          title: 'Associate Software Engineer',
-          startDate: 'July 2015',
-          endDate: 'May 2016',
+          startDate: 'January 2017',
+          endDate: 'present',
         },
         {
           title: 'Software Engineer',
@@ -21,26 +20,35 @@ const Work = () => (
           endDate: 'January 2017',
         },
         {
-          title: 'Senior Software Engineer',
-          startDate: 'January 2017',
-          endDate: 'present',
+          title: 'Associate Software Engineer',
+          startDate: 'July 2015',
+          endDate: 'May 2016',
         },
-      ]
-      }
+      ]}
     >
-      <p>
-		<ul>
-			<li>Work with agile team to replace a legacy business intelligence
-        reporting portal with one that uses modern technologies, is more flexible to changes
-        in business logic, and has a more visually appealing style. Build the backend using Spring Boot securing
-        each endpoint with JWT and OAuth2Work within the boundaries of our existing infrastructure.</li>
-
-			<li>Implement webpack for build automation tasks and React as
-        the interface for the frontend application. Set up automated functional testing for the project using a script to start up an xvfb instance (headless browser testing) with Nightwatch.js on Bamboo CI servers.</li>
-
-			<li>Work closely with the UX/Design team to fulfill the primary requirements, especially in terms of usability for customers.</li>
-		</ul>
-	  </p>
+      <ul>
+        <li>
+          Working with an agile team to replace a legacy business intelligence reporting portal with one that uses
+          modern technologies, is more flexible to changes in business logic, and has a more visually appealing style.
+        </li>
+        <li>
+          Integrate our React frontend with our Denodo and Tableau servers in order to provide enterprise reports while
+          ensuring users were HIPPA and FERPA compliant.
+        </li>
+        <li>
+          Building the backend using Spring Boot securing each endpoint with JWT and OAuth2. Working within the
+          boundaries of our existing infrastructure. (Excitedly awaiting Docker Datacenter to replace our Tomcat
+          instances, this will likely get us to move to a node backend)
+        </li>
+        <li>
+          Moved an existing project to webpack for build automation tasks and React as the interface for the frontend
+          application. Set up automated functional testing for the project using Nightwatch.js on Bamboo CI servers.
+        </li>
+        <li>
+          Work closely with the UX/Design team to fulfill the primary requirements, especially in terms of usability for
+          customers.
+        </li>
+      </ul>
     </PromotionEntry>
     <Entry
       location="Grand Valley State University - Allendale, MI"
@@ -48,27 +56,34 @@ const Work = () => (
       startDate="March 2010"
       endDate="June 2015"
     >
-      <p>
-		<ul>
-			<li>Handled installation and provisioning of all new servers. Connected
-        any necessary disk shelves. Installed RAID/Fiber Channel HBAs, and upgraded CPU/RAM when necessary.</li>
-		
-			<li>Responsible for the HP System Insight Manager server and entrusted to the well-being
-        of every server in the Data Center. Added all of the HP servers to this system (300+) and expanded the
-         system as the network grew.</li>
-
-			<li>In charge of testing the security of the networks. Used BeyondTrust’s Retina Network Security Scanner,
-        NMAP and other tools. Compiled detailed vulnerability reports and assessed threats starting with the most
-        pertinent (at the time, Heartbleed/Shellshock exploits) while working directly with the system administrator
-        to find the best course of remediation.</li>
-		
-			<li>Maintained servers in the private secured environment and ensured they were all compliant with DSS 3.0
-        in order to process credit card information. Acquired some practice with PII (Personally Identifying Information)
-        scanning, which looked for personal information such as SSNs on the network shares to reduce risk of
-        sensitive data loss.</li>
-		</ul>
-      </p>
+      <ul>
+        <li>
+          Was responsible for the HP System Insight Manager server and entrusted to the well-being of every server in
+          the Data Center. Added all of the HP servers to this system (300+) and expanded the system as the network
+          grew.
+        </li>
+        <li>
+          In charge of testing the security of the networks. Used BeyondTrust’s Retina Network Security Scanner, NMAP
+          and other tools. Compiled detailed vulnerability reports and assessed threats starting with the most pertinent
+          (at the time, Heartbleed/Shellshock exploits) while working directly with the system administrator to find the
+          best course of remediation.
+        </li>
+        <li>
+          Maintained servers in the private secured environment and ensured they were all compliant with DSS 3.0 in
+          order to process credit card information. Acquired some practice with PII (Personally Identifying Information)
+          scanning, which looked for personal information such as SSNs on the network shares to reduce risk of sensitive
+          data loss.
+        </li>
+        <li>
+          Controlled the primary security camera server, and worked with local law enforcement when necessary to obtain
+          footage for evidence.
+        </li>
+        <li>
+          Handled installation and provisioning of all new servers. Connected any necessary disk shelves. Installed
+          RAID/Fiber Channel HBAs, and upgraded CPU/RAM when necessary.
+        </li>
+      </ul>
     </Entry>
-  </Col>
+  </div>
 );
 export default Work;

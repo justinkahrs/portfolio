@@ -1,0 +1,9 @@
+.workEntries ul {
+  list-style-type: square;
+  padding: 1em;
+  text-align: justify;
+}
+
+.workEntries li {
+  padding-bottom: 0.3em;
+}

@@ -27,12 +27,12 @@ const Contact = () => (
     <p>(231) 794-1337</p>
     <h3>Social</h3>
     <div style={styles.logo}>
-    <a href="https://twitter.com/justin_kahrs">
-      <img style={styles.logo.img} src={twitterLogo} alt="Justin Kahrs Twitter Profile" />
-    </a>
-    <a href="https://github.com/justinkahrs">
-      <img style={styles.logo.img} src={githubLogo} alt="Justin Kahrs Github Profile" />
-    </a>
+      <a href="https://twitter.com/justin_kahrs">
+        <img style={styles.logo.img} src={twitterLogo} alt="Justin Kahrs Twitter Profile" />
+      </a>
+      <a href="https://github.com/justinkahrs">
+        <img style={styles.logo.img} src={githubLogo} alt="Justin Kahrs Github Profile" />
+      </a>
     </div>
   </Col>
 );

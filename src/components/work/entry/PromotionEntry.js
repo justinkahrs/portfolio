@@ -12,6 +12,8 @@ const styles = {
   },
   location: {
     marginTop: '0',
+    fontSize: '16px',
+    marginBottom: '.5em',
   },
   promotions: {
     paddingBottom: '1em',
@@ -21,10 +23,10 @@ const styles = {
 const PromotionEntry = props => (
   <Col lg={12}>
     <h2>{props.mainTitle}</h2>
-    <h3 style={styles.location}>{props.location}</h3>
-    <div style={styles.promotions}>
+    <h3 style={styles.location}>{props.location.toUpperCase()}</h3>
+    <div>
       {props.entries.map(entry => (
-        <div style={styles.item} key={entry.title}>
+        <div key={entry.title} style={styles.item}>
           <div>{entry.title}</div>
           <div style={styles.date}>
             ({entry.startDate} - {entry.endDate})

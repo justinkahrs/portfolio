@@ -1,0 +1,23 @@
+.profile {
+  text-align: justify;
+}
+.profile h2 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 26px;
+}
+.profile p {
+  padding: 0;
+}
+
+@media only screen and (max-device-width: 980px) {
+  .profile h2 {
+    margin-top: 1em;
+  }
+  .profile p {
+  }
+  img {
+    padding: 0;
+  }
+}

@@ -1,14 +1,9 @@
 import React from 'react';
-
-const styles = {
-  about: {
-    textAlign: 'justify',
-  },
-};
+import './profile.css';
 
 export default (
-  <div style={styles.about}>
-    <h2>About Me</h2>
+  <div className="profile">
+    <h2>Hi, I'm Justin</h2>
     <p>
       I am a full-stack developer with a current focus in JavaScript (React) and Java (Spring). I especially enjoy using
       the latest tools that come along with modern React development, including Redux, Webpack, Babel,and Jest.

@@ -11,24 +11,17 @@ import NavItems from './components/common/navigation/NavItems';
 import './app.css';
 
 const bounceAnimation = keyframes`${bounceInUp}`;
-const BouncyDiv = styled.div`
-  animation: 1s ${bounceAnimation};
-`;
+const BouncyDiv = styled.div`animation: 1s ${bounceAnimation};`;
 
 class App extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      animation: 'bounceInLeft',
       selected: Pages.about,
     };
   }
 
   handleSelect = (selection) => {
-    const { animation } = this.state;
-    this.setState({ animation: '' }, () => {
-      this.setState({ animation });
-    });
     this.setState({
       selected: Pages[selection],
     });
@@ -41,12 +34,12 @@ class App extends PureComponent {
         <Row>
           <Header main="Justin Kahrs" sub="Software Engineer" />
         </Row>
-        <Row className="navAndBody">
-          <BouncyDiv selected={selected}>
+        <div className="navAndBody">
+          <BouncyDiv className="all">
             <Navigation handleSelect={this.handleSelect} navItems={NavItems} />
-            {selected}
+            <div className="view">{selected}</div>
           </BouncyDiv>
-        </Row>
+        </div>
       </Grid>
     );
   }

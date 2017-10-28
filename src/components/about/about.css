@@ -1,0 +1,10 @@
+.profilePic {
+  padding-left: 0 !important;
+  padding-right: 30px !important;
+}
+@media only screen and (max-device-width: 980px) {
+  .profilePic {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}

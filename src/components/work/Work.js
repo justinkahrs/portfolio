@@ -1,10 +1,9 @@
 import React from 'react';
-import Entry from './entry/Entry';
 import PromotionEntry from './entry/PromotionEntry';
 import './work.css';
 
 const Work = () => (
-  <div className="workEntries">
+  <div style={{ textAlign: 'center' }} className="workEntries">
     <PromotionEntry
       mainTitle="Senior Software Engineer"
       location="Indiana University - Bloomington, IN"
@@ -49,11 +48,15 @@ const Work = () => (
         </li>
       </ul>
     </PromotionEntry>
-    <Entry
+    <PromotionEntry
+      mainTitle="Server Support Technician"
       location="Grand Valley State University - Allendale, MI"
-      title="Server Support Technician"
-      startDate="March 2010"
-      endDate="June 2015"
+      entries={[
+        {
+          startDate: 'March 2010',
+          endDate: 'June 2015',
+        },
+      ]}
     >
       <ul>
         <li>
@@ -82,7 +85,7 @@ const Work = () => (
           RAID/Fiber Channel HBAs, and upgraded CPU/RAM when necessary.
         </li>
       </ul>
-    </Entry>
+    </PromotionEntry>
   </div>
 );
 export default Work;

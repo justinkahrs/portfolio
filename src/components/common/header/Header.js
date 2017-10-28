@@ -1,10 +1,22 @@
 import React from 'react';
+import { bounceInLeft, bounceInRight } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
+
 import './header.css';
+
+const bounceLeftAnimation = keyframes`${bounceInLeft}`;
+const bounceRightAnimation = keyframes`${bounceInRight}`;
+const BouncyLeft = styled.div`
+  animation: 0.5s ${bounceLeftAnimation};
+`;
+const BouncyRight = styled.div`
+  animation: 0.5s ${bounceRightAnimation};
+`;
 
 const Header = props => (
   <div className="header">
-    <div className="header__main fade-in one">{props.main}</div>
-    <div className="header__sub fade-in two">{props.sub}</div>
+    <BouncyLeft className="header__main">{props.main}</BouncyLeft>
+    <BouncyRight className="header__sub">{props.sub}</BouncyRight>
   </div>
 );
 export default Header;

@@ -8,16 +8,17 @@
   text-decoration: none !important;
   margin-top: 1em;
   background-color: white;
-  color: black;
-  border: 2px solid black;
+  color: #333;
+  border: 2px solid #333;
   padding: 0.5em;
-  transition: 0.5s all;
+  transition: 0.25s all;
   border-radius: 0.5em;
 }
 .portfolioBtn:hover {
-  background-color: black;
+  box-shadow: 0.2em 0.2em 0.25em rgb(125, 125, 125);
+  background-color: #333;
   color: white;
-  transition: 0.5s all;
+  transition: 0.25s all;
 }
 .portfolio--center {
   display: flex;

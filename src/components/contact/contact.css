@@ -10,3 +10,27 @@
   margin-bottom: 0.5em;
   font-weight: bold;
 }
+
+.logoImg {
+  width: 64px;
+  height: 64px;
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+}
+.logoBtn:hover {
+  transform: rotate(360deg);
+  transition: transform 0.5s;
+}
+.logoBtn--twitter {
+  width: 64px;
+  height: 64px;
+  background-image: url("https://raw.githubusercontent.com/justinkahrs/portfolio/master/src/components/contact/img/twitter.png") !important;
+  background-size: 100%;
+}
+.logoBtn--github {
+  width: 64px;
+  height: 64px;
+  background-image: url("https://raw.githubusercontent.com/justinkahrs/portfolio/master/src/components/contact/img/github.png") !important;
+}

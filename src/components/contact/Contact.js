@@ -1,19 +1,7 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
-import twitterLogo from './img/twitter.png';
-import githubLogo from './img/github.png';
 
 import './contact.css';
-
-const styles = {
-  logo: {
-    img: {
-      width: '64px',
-      height: '64px',
-    },
-    flexDirection: 'row',
-  },
-};
 
 const Contact = () => (
   <Col className="contact--center" lg={12}>
@@ -22,12 +10,12 @@ const Contact = () => (
     <h3>Telephone</h3>
     <p>(231) 794-1337</p>
     <h3>Social</h3>
-    <div style={styles.logo}>
+    <div className="logos">
       <a href="https://twitter.com/justin_kahrs">
-        <img style={styles.logo.img} src={twitterLogo} alt="Justin Kahrs Twitter Profile" />
+        <div className="logoBtn logoBtn--twitter" />
       </a>
       <a href="https://github.com/justinkahrs">
-        <img style={styles.logo.img} src={githubLogo} alt="Justin Kahrs Github Profile" />
+        <div className="logoBtn logoBtn--github" />
       </a>
     </div>
   </Col>

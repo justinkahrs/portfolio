@@ -19,16 +19,14 @@ const PromotionEntry = props => (
   <Col lg={12}>
     <h2>{props.mainTitle}</h2>
     <h3 style={styles.location}>{props.location.toUpperCase()}</h3>
-    <div>
-      {props.entries.map(entry => (
-        <div key={entry.title} style={styles.item}>
-          <div>{entry.title}</div>
-          <div style={styles.date}>
-            ({entry.startDate} - {entry.endDate})
-          </div>
+    {props.entries.map(entry => (
+      <div style={styles.item}>
+        <div>{entry.title}</div>
+        <div style={styles.date}>
+          ({entry.startDate} - {entry.endDate})
         </div>
-      ))}
-    </div>
+      </div>
+    ))}
     {props.children}
   </Col>
 );

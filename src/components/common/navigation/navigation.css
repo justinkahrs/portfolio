@@ -6,3 +6,6 @@
   color: black !important;
   transition: 0.25s all;
 }
+#aboutNav:focus {
+  outline: none;
+}

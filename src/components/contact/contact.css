@@ -4,10 +4,6 @@
   font-weight: bold;
 }
 
-.logoImg {
-  width: 64px;
-  height: 64px;
-}
 .logos {
   justify-content: center;
   display: flex;
@@ -18,13 +14,16 @@
   transition: transform 0.5s;
 }
 .logoBtn--twitter {
+  margin-top: -10px;
   width: 64px;
   height: 64px;
   background-image: url("https://raw.githubusercontent.com/justinkahrs/portfolio/master/src/components/contact/img/twitter.png") !important;
   background-size: 100%;
 }
 .logoBtn--github {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   background-image: url("https://raw.githubusercontent.com/justinkahrs/portfolio/master/src/components/contact/img/github.png") !important;
+  background-size: 90%;
+  background-repeat: no-repeat;
 }

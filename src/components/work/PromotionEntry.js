@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
-import './promotionEntry.css';
 
 const styles = {
   date: {
@@ -13,9 +12,6 @@ const styles = {
     marginTop: '0',
     fontSize: '16px',
     marginBottom: '.5em',
-  },
-  promotions: {
-    paddingBottom: '1em',
   },
 };
 

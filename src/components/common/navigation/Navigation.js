@@ -5,13 +5,19 @@ import './navigation.css';
 const Navigation = ({ handleSelect, navItems }) => (
   <Col lg={12}>
     <Nav className="navBar" justified onSelect={handleSelect}>
-      <NavItem autofocus eventKey={'about'}>
+      <NavItem id="aboutNav" eventKey={'about'}>
         about
       </NavItem>
       <NavItem eventKey={'work'}>work</NavItem>
       <NavItem eventKey={'portfolio'}>portfolio</NavItem>
       <NavItem eventKey={'contact'}>contact</NavItem>
     </Nav>
+    {
+      // TO-DO I'm too lazy to put in react-router, will fix when I host this elsewhere
+      (window.onload = function () {
+        document.getElementById('aboutNav').focus();
+      })
+    }
   </Col>
 );
 export default Navigation;

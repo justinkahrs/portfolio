@@ -1,5 +1,5 @@
 .navAndBody {
-  padding-top: 2em;
+  margin-top: 2em;
   margin-right: 20%;
   margin-left: 20%;
 }
@@ -11,6 +11,12 @@
   }
   .view {
     padding-top: 2em !important;
+  }
+}
+
+@media only screen and (min-device-width: 980px) and (max-device-width: 2000px) {
+  .view {
+    padding-top: 1em;
   }
 }
 .view {

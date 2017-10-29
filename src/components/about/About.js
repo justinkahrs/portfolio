@@ -8,10 +8,10 @@ import './about.css';
 
 const About = () => (
   <Col lg={12}>
-    <Col className="profilePic" lg={4}>
-      <Image alt="me in front of a blue background" src={profilePic} responsive />
+    <Col className="profilePic" xs={12} sm={3} md={4} lg={4}>
+      <Image alt="me in front of a blue background" src={profilePic} responsive rounded />
     </Col>
-    <Col lg={8} />
+    <Col md={4} lg={8} />
     {profileText}
   </Col>
 );

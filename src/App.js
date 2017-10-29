@@ -37,7 +37,7 @@ class App extends PureComponent {
         <div className="navAndBody">
           <BouncyDiv className="all">
             <Navigation handleSelect={this.handleSelect} navItems={NavItems} />
-            <div className="view">{selected}</div>
+            {selected}
           </BouncyDiv>
         </div>
       </Grid>

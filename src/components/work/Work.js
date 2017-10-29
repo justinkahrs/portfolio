@@ -1,9 +1,10 @@
 import React from 'react';
-import PromotionEntry from './entry/PromotionEntry';
+import { Col } from 'react-bootstrap';
+import PromotionEntry from './PromotionEntry';
 import './work.css';
 
 const Work = () => (
-  <div style={{ textAlign: 'center' }} className="workEntries">
+  <Col className="workPage" lg={12}>
     <PromotionEntry
       mainTitle="Senior Software Engineer"
       location="Indiana University - Bloomington, IN"
@@ -86,6 +87,6 @@ const Work = () => (
         </li>
       </ul>
     </PromotionEntry>
-  </div>
+  </Col>
 );
 export default Work;

@@ -4,7 +4,7 @@ import { Col } from 'react-bootstrap';
 import './portfolio.css';
 
 const Portfolio = () => (
-  <Col className="portfolio" lg={12}>
+  <Col className="portfolioPage" lg={12}>
     <div className="portfolio--center">
       <h2>Here are some things I've made</h2>
       <a className="portfolioBtn" href="https://justinkahrs.github.io/pickapartpc/">

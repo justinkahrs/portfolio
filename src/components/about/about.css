@@ -1,10 +1,15 @@
 .profilePic {
+  transition: 0.25s all;
   padding-left: 0 !important;
 }
 @media only screen and (max-device-width: 769px) {
   .profilePic {
+    margin-bottom: 2em;
+  }
+}
+@media only screen and (min-device-width: 600px) and (max-device-width: 767px) {
+  .profilePic {
     display: flex;
     justify-content: center;
-    margin-bottom: 2em;
   }
 }

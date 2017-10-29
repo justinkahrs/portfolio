@@ -2,9 +2,7 @@
   border-top: 1px solid;
   border-bottom: 1px solid;
 }
-
 .navBar a {
-  font-family: monospace;
   color: black !important;
   transition: 0.25s all;
 }

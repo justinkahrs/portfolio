@@ -4,7 +4,7 @@ import { Col } from 'react-bootstrap';
 import './contact.css';
 
 const Contact = () => (
-  <Col className="contact--center" lg={12}>
+  <Col className="contactPage" lg={12}>
     <h3>Email</h3>
     <p>justin@justinkahrs.com</p>
     <h3>Telephone</h3>

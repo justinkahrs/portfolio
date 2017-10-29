@@ -1,11 +1,4 @@
-.contact--center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.contact--center h3 {
+.contactPage h3 {
   margin-top: 0 !important;
   margin-bottom: 0.5em;
   font-weight: bold;
@@ -16,6 +9,7 @@
   height: 64px;
 }
 .logos {
+  justify-content: center;
   display: flex;
   flex-direction: row;
 }

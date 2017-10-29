@@ -4,22 +4,33 @@
   margin-left: 20%;
 }
 
-@media only screen and (max-device-width: 980px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .navAndBody {
     margin-right: 0;
     margin-left: 0;
   }
-  .view {
-    padding-top: 2em !important;
+}
+@media only screen and (min-device-width: 767px) and (max-device-width: 1200px) {
+  .navAndBody {
+    margin-right: 10%;
+    margin-left: 10%;
   }
 }
-
-@media only screen and (min-device-width: 980px) and (max-device-width: 2000px) {
-  .view {
-    padding-top: 1em;
-  }
+.aboutPage {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
-.view {
-  padding-top: 5em;
-  margin-bottom: 5em;
+.contactPage {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.workPage {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.portfolioPage {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }

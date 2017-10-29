@@ -4,7 +4,6 @@ import './promotionEntry.css';
 
 const styles = {
   date: {
-    fontWeight: 'bold',
     display: 'inline',
   },
   item: {

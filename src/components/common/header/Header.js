@@ -6,12 +6,8 @@ import './header.css';
 
 const bounceLeftAnimation = keyframes`${bounceInLeft}`;
 const bounceRightAnimation = keyframes`${bounceInRight}`;
-const BouncyLeft = styled.div`
-  animation: 0.5s ${bounceLeftAnimation};
-`;
-const BouncyRight = styled.div`
-  animation: 0.5s ${bounceRightAnimation};
-`;
+const BouncyLeft = styled.div`animation: 1s ${bounceLeftAnimation};`;
+const BouncyRight = styled.div`animation: 1s ${bounceRightAnimation};`;
 
 const Header = props => (
   <div className="header">

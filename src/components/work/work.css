@@ -1,10 +1,10 @@
-.workEntries ul {
+.workPage ul {
   list-style-type: square;
   padding: 1em;
   text-align: justify;
 }
 
-.workEntries li {
+.workPage li {
   padding-bottom: 0.3em;
   font-size: 18px;
 }

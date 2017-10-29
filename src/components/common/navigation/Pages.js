@@ -6,8 +6,8 @@ import About from '../../about/About';
 import Portfolio from '../../portfolio';
 
 export default {
-  about: <About key="about" />,
-  contact: <Contact key="contact" />,
-  portfolio: <Portfolio key="portfolio" />,
-  work: <Work key="work" />,
+  about: <About />,
+  contact: <Contact />,
+  portfolio: <Portfolio />,
+  work: <Work />,
 };

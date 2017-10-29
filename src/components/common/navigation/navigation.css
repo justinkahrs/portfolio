@@ -5,6 +5,6 @@
 
 .navBar a {
   font-family: monospace;
-  font-weight: bold;
   color: black !important;
+  transition: 0.25s all;
 }

@@ -3,13 +3,9 @@ import { Col } from 'react-bootstrap';
 import twitterLogo from './img/twitter.png';
 import githubLogo from './img/github.png';
 
+import './contact.css';
+
 const styles = {
-  center: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-  },
   logo: {
     img: {
       width: '64px',
@@ -20,7 +16,7 @@ const styles = {
 };
 
 const Contact = () => (
-  <Col style={styles.center} lg={12}>
+  <Col className="contact--center" lg={12}>
     <h3>Email</h3>
     <p>justin@justinkahrs.com</p>
     <h3>Telephone</h3>

@@ -1,4 +1,7 @@
-.portfolio {
+.portfolio h2 {
+  text-align: center;
+}
+.portfolio p {
   text-align: justify;
 }
 .portfolioBtn {

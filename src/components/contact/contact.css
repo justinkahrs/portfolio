@@ -27,3 +27,10 @@
   background-size: 90%;
   background-repeat: no-repeat;
 }
+.logoBtn--soundcloud {
+  width: 48px;
+  height: 48px;
+  background-image: url("https://raw.githubusercontent.com/justinkahrs/portfolio/master/src/components/contact/img/soundcloud-logo.png") !important;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}

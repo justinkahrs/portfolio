@@ -27,7 +27,7 @@ class App extends PureComponent {
     return (
       <Grid>
         <Row>
-          <Header main="Justin Kahrs" sub="Software Engineer" />
+          <Header main="Justin Kahrs" sub="Software Engineer" sub2="Musician" />
         </Row>
         <div className="navAndBody">
           <Navigation handleSelect={this.handleSelect} navItems={NavItems} />

@@ -6,12 +6,34 @@ import './work.css';
 const Work = () => (
   <Col className="workPage" lg={12}>
     <PromotionEntry
+      mainTitle="Senior Front End Engineer"
+      location="Ridecell - San Francisco, CA"
+      entries={[
+        {
+          startDate: 'January 2018',
+          endDate: 'present',
+        },
+      ]}
+    >
+      <ul>
+        <li>
+          Deliver enterprise level software to successful ride sharing and car sharing companies across the globe.
+        </li>
+        <li>Integrate with Electrify America to help create the nation's largest all electric car sharing fleet</li>
+        <li>
+          Create interactive maps for customers to track and maintain their international fleets (thousands of vehicles strong), while ensuring GDPR compliance.
+        </li>
+        <li>Migrate existing JQuery pages to React, and subsequently upgrade the large codebase to React 16</li>
+        <li>Developed key features of the Operations Center that enabled the company to secure millions in extra funding.</li>
+      </ul>
+    </PromotionEntry>
+    <PromotionEntry
       mainTitle="Senior Software Engineer"
       location="Indiana University - Bloomington, IN"
       entries={[
         {
           startDate: 'January 2017',
-          endDate: 'present',
+          endDate: 'January 2018',
         },
         {
           title: 'Software Engineer',
@@ -27,24 +49,24 @@ const Work = () => (
     >
       <ul>
         <li>
-          Working with an agile team to replace a legacy business intelligence reporting portal with one that uses
-          modern technologies, is more flexible to changes in business logic, and has a more visually appealing style.
+          Worked with an agile team to replace a legacy business intelligence reporting portal with one that used
+          modern technologies, was more flexible to changes in business logic, and had a more visually appealing style.
         </li>
         <li>
-          Integrate our React frontend with our Denodo and Tableau servers in order to provide enterprise reports while
+          Integrated the React frontend with Denodo and Tableau servers in order to provide enterprise reports while
           ensuring users were HIPPA and FERPA compliant.
         </li>
         <li>
-          Building the backend using Spring Boot securing each endpoint with JWT and OAuth2. Working within the
-          boundaries of our existing infrastructure. (Excitedly awaiting Docker Datacenter to replace our Tomcat
-          instances, this will likely get us to move to a node backend)
+          Built the backend using Spring Boot, securing each endpoint with JWT and OAuth2 while working within the
+          boundaries of the existing infrastructure (while prepping for Docker Datacenter to replace the Tomcat
+          instances, in order to move to a node backend)
         </li>
         <li>
-          Moved an existing project to webpack for build automation tasks and React as the interface for the frontend
-          application. Set up automated functional testing for the project using Nightwatch.js on Bamboo CI servers.
+          Migrated a project to webpack (for build automation tasks) and React.
+          Set up automated functional testing for the project using Nightwatch.js on Bamboo CI servers.
         </li>
         <li>
-          Work closely with the UX/Design team to fulfill the primary requirements, especially in terms of usability for
+          Worked closely with the UX/Design team to fulfill the primary requirements, focusing heavily on usability for
           customers.
         </li>
       </ul>

@@ -17,6 +17,9 @@ const Contact = () => (
       <a href="https://github.com/justinkahrs">
         <div className="logoBtn logoBtn--github" />
       </a>
+      <a href="https://soundcloud.com/justinkahrs">
+        <div className="logoBtn logoBtn--soundcloud" />
+      </a>
     </div>
   </Col>
 );

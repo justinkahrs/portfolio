@@ -5,6 +5,7 @@ const Header = props => (
   <div className="header">
     <div className="header__main">{props.main}</div>
     <div className="header__sub">{props.sub}</div>
+    <div className="header__sub">{props.sub2}</div>
   </div>
 );
 export default Header;

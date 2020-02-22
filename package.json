@@ -5,18 +5,17 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "react": "^15.5.4",
+    "react": "^16.12.0",
     "react-bootstrap": "^0.31.0",
-    "react-dom": "^15.5.4"
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^7.0.1",
     "gh-pages": "^1.0.0",
-    "react-scripts": "0.9.5"
+    "react-scripts": "3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,5 +24,17 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

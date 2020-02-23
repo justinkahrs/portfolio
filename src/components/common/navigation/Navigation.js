@@ -9,7 +9,6 @@ const Navigation = ({ handleSelect }) => (
         about
       </NavItem>
       <NavItem eventKey={'work'}>work</NavItem>
-      <NavItem eventKey={'portfolio'}>portfolio</NavItem>
       <NavItem eventKey={'music'}>music</NavItem>
       <NavItem eventKey={'contact'}>contact</NavItem>
     </Nav>

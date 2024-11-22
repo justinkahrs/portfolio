@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Twitter, Linkedin, Github, Music, Mail } from "lucide-react";
+import { Twitter, Linkedin, Github, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -36,7 +36,8 @@ export default function Portfolio() {
       } else {
         throw new Error("Failed to send message");
       }
-    } catch (error) {
+    } catch (e) {
+      console.error(e);
       toast({
         title: "Error",
         description: "Failed to send message. Please try again.",

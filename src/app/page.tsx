@@ -122,15 +122,14 @@ export default function Portfolio() {
         {activeTab === "music" && (
           <div className="space-y-4">
             <div className="aspect-w-16 aspect-h-9">
-              {/* Insert your SoundCloud embed code here */}
               <p className="text-gray-500 text-center">
                 <iframe
                   width="100%"
                   height="166"
-                  allow="autoplay"
-                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1463115832&color=%23ff5500&auto_play=true&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"
+                  // allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1458463900&color=%23ff5500&auto_play=true&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"
                 ></iframe>
-                <div
+                <span
                   style={{
                     fontSize: "10px",
                     color: "#cccccc",
@@ -148,37 +147,32 @@ export default function Portfolio() {
                     href="https://soundcloud.com/justinkahrs"
                     title="justinkahrs"
                     target="_blank"
-                    style={{
-                      color: "#cccccc",
-                      textDecoration: "none",
-                    }}
+                    style={{ color: "#cccccc", textDecoration: "none" }}
                   >
                     justinkahrs
                   </a>{" "}
                   ·{" "}
                   <a
-                    href="https://soundcloud.com/justinkahrs/hlo"
-                    title="Hlo"
+                    href="https://soundcloud.com/justinkahrs/cezar"
+                    title="cezar"
                     target="_blank"
-                    style={{
-                      color: "#cccccc",
-                      textDecoration: "none",
-                    }}
+                    style={{ color: "#cccccc", textDecoration: "none" }}
                   >
-                    Hlo
+                    cezar
                   </a>
-                </div>
+                </span>
               </p>
             </div>
-            <a
-              href="https://open.spotify.com/artist/39I6fblCZ73j0bb59JpRde?si=HlWrGAZoS8qe5ajBSpT37A"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center text-gray-700 hover:text-green-500"
-            >
-              <Music className="mr-2" />
-              Spotify
-            </a>
+            <iframe
+              style={{ borderRadius: "12px" }}
+              src="https://open.spotify.com/embed/track/4S9KLaUwqvORgG1gqbUadD?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allowFullScreen
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
           </div>
         )}
 

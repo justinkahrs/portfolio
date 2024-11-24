@@ -101,7 +101,93 @@ export default function Portfolio() {
             Contact
           </Button>
         </div>
-
+        {activeTab === "work" && (
+          <div className="flex flex-col sm:flex-row sm:space-x-6 justify-center">
+            <a
+              href="https://x.com/justin_kahrs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-gray-700 hover:text-blue-500 mb-2 sm:mb-0"
+            >
+              <Twitter className="mr-2" />
+              Twitter
+            </a>
+            <a
+              href="https://www.linkedin.com/in/justin-k-84138b152/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-gray-700 hover:text-blue-500 mb-2 sm:mb-0"
+            >
+              <Linkedin className="mr-2" />
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/justinkahrs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-gray-700 hover:text-blue-500"
+            >
+              <Github className="mr-2" />
+              GitHub
+            </a>
+          </div>
+        )}
+        {activeTab === "music" && (
+          <div className="space-y-4">
+            <div className="aspect-w-16 aspect-h-9">
+              <p className="text-gray-500 text-center">
+                <iframe
+                  width="100%"
+                  height="166"
+                  // allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1458463900&color=%23ff5500&auto_play=true&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"
+                ></iframe>
+                <span
+                  style={{
+                    fontSize: "10px",
+                    color: "#cccccc",
+                    lineBreak: "anywhere",
+                    wordBreak: "normal",
+                    overflow: "hidden",
+                    whiteSpace: "nowrap",
+                    textOverflow: "ellipsis",
+                    fontFamily:
+                      "Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif",
+                    fontWeight: 100,
+                  }}
+                >
+                  <a
+                    href="https://soundcloud.com/justinkahrs"
+                    title="justinkahrs"
+                    target="_blank"
+                    style={{ color: "#cccccc", textDecoration: "none" }}
+                  >
+                    justinkahrs
+                  </a>{" "}
+                  ·{" "}
+                  <a
+                    href="https://soundcloud.com/justinkahrs/cezar"
+                    title="cezar"
+                    target="_blank"
+                    style={{ color: "#cccccc", textDecoration: "none" }}
+                  >
+                    cezar
+                  </a>
+                </span>
+              </p>
+            </div>
+            <iframe
+              style={{ borderRadius: "12px" }}
+              src="https://open.spotify.com/embed/track/4S9KLaUwqvORgG1gqbUadD?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allowFullScreen
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+        )}
         {activeTab === "contact" && (
           <form onSubmit={handleSubmit} className="space-y-4">
             <Input

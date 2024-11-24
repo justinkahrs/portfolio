@@ -15,7 +15,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/api/contact', // Incoming request path
-        destination: 'http://automation.servehttp.com/webhook-test/contact', // API URL
+        destination: 'http://automation.servehttp.com/webhook/contact', // API URL
       },
     ];
   },

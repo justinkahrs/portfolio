@@ -267,8 +267,8 @@ export default function Contact() {
             onBlur={() => handleBlur("consentGiven")}
             className="mr-2"
           />
-          I agree to be contacted via email or text message by one of Justin's
-          AI automations
+          I agree to be contacted via email or text message by one of
+          Justin&apos;s AI automations
         </label>
         {getConsentError() && (
           <p className="text-red-500 text-sm mt-1">{getConsentError()}</p>

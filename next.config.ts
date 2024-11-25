@@ -11,6 +11,12 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: '/api/contact', // Incoming request path
+        destination: 'http://automation.servehttp.com/webhook/contact', // API URL
+      },
+    ];
+  },
 };
-
-export default nextConfig;

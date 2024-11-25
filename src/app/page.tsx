@@ -12,18 +12,31 @@ export default function Portfolio() {
   const [activeTab, setActiveTab] = useState("work");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const { toast } = useToast();
 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phoneRegex = /^(\+?\d{1,3})?[\s.-]?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+
+  const isFormValid = () => {
+    const isEmailValid = email && emailRegex.test(email);
+    const isPhoneValid = phone && phoneRegex.test(phone);
+    const isNameValid = name.trim().length > 0;
+    const isMessageValid = message.trim().length > 0;
+    return isNameValid && isMessageValid && (isEmailValid || isPhoneValid);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    console.log({ name, email, phone, message });
     try {
-      const response = await fetch("YOUR_WEBHOOK_URL", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({ name, email, phone, message }),
       });
       if (response.ok) {
         toast({
@@ -32,6 +45,7 @@ export default function Portfolio() {
         });
         setName("");
         setEmail("");
+        setPhone("");
         setMessage("");
       } else {
         throw new Error("Failed to send message");
@@ -61,7 +75,7 @@ export default function Portfolio() {
           />
           <p className="text-center text-gray-600 max-w-xs">
             Developer, automation specialist, and musician. Passionate about
-            creating efficient solutions and beautiful melodies.
+            crafting efficient solutions and beautiful harmonies.
           </p>
         </div>
 
@@ -87,7 +101,6 @@ export default function Portfolio() {
             Contact
           </Button>
         </div>
-
         {activeTab === "work" && (
           <div className="flex flex-col sm:flex-row sm:space-x-6 justify-center">
             <a
@@ -119,7 +132,6 @@ export default function Portfolio() {
             </a>
           </div>
         )}
-
         {activeTab === "music" && (
           <div className="space-y-4">
             <div className="aspect-w-16 aspect-h-9">
@@ -176,7 +188,6 @@ export default function Portfolio() {
             ></iframe>
           </div>
         )}
-
         {activeTab === "contact" && (
           <form onSubmit={handleSubmit} className="space-y-4">
             <Input
@@ -188,10 +199,17 @@ export default function Portfolio() {
             />
             <Input
               type="email"
-              placeholder="Email"
+              placeholder="Email (optional)"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
+              className={email && !emailRegex.test(email) ? "border-red-500" : ""}
+            />
+            <Input
+              type="text"
+              placeholder="Phone (optional)"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              className={phone && !phoneRegex.test(phone) ? "border-red-500" : ""}
             />
             <Textarea
               placeholder="Message"
@@ -199,7 +217,11 @@ export default function Portfolio() {
               onChange={(e) => setMessage(e.target.value)}
               required
             />
-            <Button type="submit" className="w-full">
+            <Button
+              type="submit"
+              className="w-full"
+              disabled={!isFormValid()}
+            >
               <Mail className="mr-2" />
               Send Message
             </Button>

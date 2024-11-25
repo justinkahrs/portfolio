@@ -6,7 +6,7 @@ import Image from "next/image";
 import Navigation from "./navigation";
 
 export const metadata = {
-  title: "Justin Kahrs Portfolio",
+  title: "Justin Kahrs",
   description: "Developer, automation specialist, and musician.",
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>{/* You can include additional <meta> tags here */}</head>
       <body>
         <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
-          <div className="bg-white rounded-lg shadow-lg p-8 max-w-lg w-full">
+          <div className="bg-white rounded-lg shadow-lg p-8 max-w-xl w-full">
             {/* Header */}
             <h1 className="text-3xl font-bold text-center mb-6">
               Justin Kahrs

@@ -265,10 +265,10 @@ export default function Contact() {
             checked={consentGiven}
             onChange={(e) => setConsentGiven(e.target.checked)}
             onBlur={() => handleBlur("consentGiven")}
-            className="mr-2"
+            className="ml-4 mr-6"
           />
           I agree to be contacted via email or text message by one of
-          Justin&apos;s AI automations
+          Justin&apos;s AI automations, and that I can unsubscribe at any time.
         </label>
         {getConsentError() && (
           <p className="text-red-500 text-sm mt-1">{getConsentError()}</p>

@@ -53,7 +53,7 @@ export default function Portfolio() {
 
         <div className="flex flex-col items-center mb-6">
           <Image
-            src="https://i.imgur.com/u12TbZf.jpeg"
+            src="/profilepic.jpeg"
             alt="Justin Kahrs"
             width={150}
             height={150}

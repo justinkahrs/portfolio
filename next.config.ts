@@ -1,22 +1,16 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "i.imgur.com",
-        port: "",
-        pathname: "/u12TbZf.jpeg",
-      },
-    ],
-  },
   async rewrites() {
     return [
       {
-        source: '/api/contact', // Incoming request path
-        destination: 'http://automation.servehttp.com/webhook/contact', // API URL
+        source: "/api/contact", // Incoming request path
+        destination:
+          "https://hook.us2.make.com/czl2sakrvu8n63iqrlfgbp5nwyyk14bp", // API URL
       },
     ];
   },
 };
+
+export default nextConfig;

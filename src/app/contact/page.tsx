@@ -7,7 +7,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
-import { useToast } from "@/components/ui/use-toast";
 
 export default function Contact() {
   // State variables
@@ -17,6 +16,8 @@ export default function Contact() {
   const [contactPreference, setContactPreference] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [consentGiven, setConsentGiven] = useState<boolean>(false);
+  const [modalVisible, setModalVisible] = useState<boolean>(false);
+  const [modalMessage, setModalMessage] = useState<string>("");
 
   // Touched state variables
   const [touchedFields, setTouchedFields] = useState({
@@ -27,8 +28,6 @@ export default function Contact() {
     message: false,
     consentGiven: false,
   });
-
-  const { toast } = useToast();
 
   // Validation regex patterns
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -86,35 +85,22 @@ export default function Contact() {
   // Form submission handler
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log({
-      name,
-      email,
-      phone,
-      contactPreference,
-      message,
-      consentGiven,
-    });
+
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("phone", phone);
+    formData.append("contactPreference", contactPreference);
+    formData.append("message", message);
+    formData.append("consentGiven", consentGiven.toString());
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          phone,
-          contactPreference,
-          message,
-          consentGiven,
-        }),
+        body: formData,
       });
+
       if (response.ok) {
-        toast({
-          title: "Message sent!",
-          description: "I'll get back to you soon.",
-        });
-        // Reset form fields
         setName("");
         setEmail("");
         setPhone("");
@@ -129,16 +115,16 @@ export default function Contact() {
           message: false,
           consentGiven: false,
         });
-      } else {
-        throw new Error("Failed to send message");
+        setModalMessage("Message sent!");
+        setModalVisible(true);
+        // Reset form fields here if needed
       }
     } catch (error) {
       console.error(error);
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive",
-      });
+      setModalMessage(
+        "There was an error sending the message. Try reaching out directly - justin@justinkahrs.com or (231) 794-1337 "
+      );
+      setModalVisible(true);
     }
   };
 
@@ -294,6 +280,19 @@ export default function Contact() {
         <Mail className="mr-2" />
         Send Message
       </Button>
+      {modalVisible && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded shadow-md text-center">
+            <p>{modalMessage}</p>
+            <Button
+              onClick={() => setModalVisible(false)}
+              className="mt-4 w-full"
+            >
+              Close
+            </Button>
+          </div>
+        </div>
+      )}
     </form>
   );
 }

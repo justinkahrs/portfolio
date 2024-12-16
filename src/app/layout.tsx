@@ -36,8 +36,9 @@ export default function RootLayout({
                 className="rounded-full mb-4"
               />
               <p className="text-center text-gray-600 max-w-xs">
-                Developer, automation specialist, and musician. Passionate about
-                crafting efficient solutions and beautiful harmonies.
+                Developer, AI automation workflow specialist, and musician.
+                Passionate about crafting efficient solutions and beautiful
+                harmonies.
               </p>
             </div>
 

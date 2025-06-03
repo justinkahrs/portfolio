@@ -19,11 +19,7 @@ export default function Work() {
           </li>
           <li>
             Web and application development (
-            <Link
-              href="https://justinkahrs.github.io/resume/"
-              passHref
-              legacyBehavior
-            >
+            <Link href="https://resume.justinkahrs.com" passHref legacyBehavior>
               <a className="text-blue-500 hover:underline">résumé</a>
             </Link>
             )

@@ -11,6 +11,24 @@ export default function Work() {
       <div className="mb-6">
         <ul className="list-disc list-inside text-gray-700 space-y-1">
           <li>
+            Creator of{" "}
+            <Link href="https://o11n.life" passHref legacyBehavior>
+              <a className="text-blue-500 hover:underline"> o11n</a>
+            </Link>
+            , an AI-augmented IDE to enable rapid development
+          </li>
+          <li>
+            Web and application development (
+            <Link
+              href="https://justinkahrs.github.io/resume/"
+              passHref
+              legacyBehavior
+            >
+              <a className="text-blue-500 hover:underline">résumé</a>
+            </Link>
+            )
+          </li>
+          <li>
             AI and automation consulting via{" "}
             <a
               href="https://www.senna-automation.com"
@@ -21,23 +39,13 @@ export default function Work() {
               Senna Automation
             </a>
           </li>
-          <li>Web and application development contracting</li>
           <li>Sound design for games and other commercial projects</li>
         </ul>
         <p className="text-gray-600 mt-2">
-          Feel free to
-          <Link
-            href="https://justinkahrs.github.io/resume/"
-            passHref
-            legacyBehavior
-          >
-            <a className="text-blue-500 hover:underline"> read my resume </a>
-          </Link>
-          or
           <Link href="/contact" passHref legacyBehavior>
-            <a className="text-blue-500 hover:underline"> contact me </a>
+            <a className="text-blue-500 hover:underline">Contact me </a>
           </Link>
-          to discuss how we can work together.
+          to discuss how we can work together!
         </p>
       </div>
 
